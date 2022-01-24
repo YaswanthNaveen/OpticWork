@@ -1,0 +1,684 @@
+{
+  "Budget Header": [
+    {
+      "Department": "VMT",
+      "DepartmentID": "2",
+      "MeetingDate": "2020-09-25T10:30:00Z",
+      "MeetingDateID": "18",
+      "HeaderTitle": "GapToGDDNon-DrugProjectBudget",
+      "Title": "GapToGDDNon-DrugProjectBudget",
+      "List": "Budget Header"
+    },
+    {
+      "Department": "GDDIC",
+      "DepartmentID": "3",
+      "MeetingDate": "2020-09-24T06:30:00Z",
+      "MeetingDateID": "15",
+      "HeaderTitle": "GDDICBudgetgap",
+      "Title": "GDDICBudgetgap",
+      "List": "Budget Header"
+    },
+    {
+      "Department": "VMT",
+      "DepartmentID": "2",
+      "MeetingDate": "2020-09-29T02:30:00Z",
+      "MeetingDateID": "20",
+      "HeaderTitle": "Itsmyupdatetitle",
+      "Title": "Itsmyupdatetitle",
+      "List": "Budget Header"
+    }
+    
+  ],
+  "Application Feedback": [
+    {
+      "Rating": "5",
+      "IssueType": "Other",
+      "Comments": "ExcellentTool",
+      "Status": "Closed",
+      "Title": "05d30e3e-9342-4a3d-aa70-544c1d1d0ffc",
+      "List": "Application Feedback"
+    },
+    {
+      "Rating": "4",
+      "IssueType": "Issue",
+      "Comments": "something",
+      "Status": "Open",
+      "Title": "23de722f-8608-4241-84a9-ef78352c72fa",
+      "List": "Application Feedback"
+    },
+    {
+      "Rating": "5",
+      "IssueType": "Other",
+      "Comments": "Goodwork",
+      "Status": "Closed",
+      "Title": "6b9a3a15-9565-4ffc-a885-2ae8824cc1fa",
+      "List": "Application Feedback"
+    }
+    
+  ],
+  "Risk Register_Project": [
+    {
+      "Proposal": "test52",
+      "ProposalID": "5379",
+      "riskRegisterUrl": "https://www.w3schools.com/sql/",
+      "Title": "SampleTestRegister",
+      "List": "Risk Register_Project"
+    },
+    {
+      "Proposal": "test52",
+      "ProposalID": "5379",
+      "riskRegisterUrl": "https://www.w3schools.com/sql/",
+      "Title": "Test1",
+      "List": "Risk Register_Project"
+    }
+  ],
+  "RiskAssessmentQuestions": [
+    {
+      "proposal": "test",
+      "proposalID": "5359",
+      "CriticalRisk": "Risk1:DoestheSolution/technologyrequireworkingwithbusinesscriticaldata?",
+      "AnswerProvided": "YeswithStrictlyConfidentialinformation",
+      "RiskScore": "4",
+      "InRiskRegister": "False",
+      "MitigationInPlace": "False",
+      "ConfidenceInMitigation": "",
+      "RiskType": "TechnicalSuccess",
+      "Title": "",
+      "List": "RiskAssessmentQuestions"
+    },
+    {
+      "proposal": "test",
+      "proposalID": "5359",
+      "CriticalRisk": "Risk2:Doestheproject/technologyinvolveorrequireworkingwithsocialmedia?",
+      "AnswerProvided": "NoorNotApplicable(IfNA,pleaseelaborateinthe\"clarification\"column)",
+      "RiskScore": "0",
+      "InRiskRegister": "False",
+      "MitigationInPlace": "False",
+      "ConfidenceInMitigation": "",
+      "RiskType": "TechnicalSuccess",
+      "Title": "",
+      "List": "RiskAssessmentQuestions"
+    },
+    {
+      "proposal": "test",
+      "proposalID": "5359",
+      "CriticalRisk": "Risk3:IfITproject,doesanITteamexist,(ITProjectManager,ProjectQualityManagement(PQM),SecurityManager,etc)?",
+      "AnswerProvided": "Yes,morethan50%appointed",
+      "RiskScore": "1",
+      "InRiskRegister": "False",
+      "MitigationInPlace": "False",
+      "ConfidenceInMitigation": "",
+      "RiskType": "TechnicalSuccess",
+      "Title": "",
+      "List": "RiskAssessmentQuestions"
+    }
+	],
+	"RiskAssessmentQuestions_Project": [
+    {
+      "proposal": "test52",
+      "proposalID": "5379",
+      "CriticalRisk": "Risk1:DoestheSolution/technologyrequireworkingwithbusinesscriticaldata?",
+      "AnswerProvided": "YeswithRestrictedinformation",
+      "RiskScore": "3",
+      "InRiskRegister": "False",
+      "MitigationInPlace": "False",
+      "ConfidenceInMitigation": "",
+      "RiskType": "TechnicalSuccess",
+      "NewRiskScore": "3",
+      "Title": "",
+      "List": "RiskAssessmentQuestions_Project"
+    },
+    {
+      "proposal": "test52",
+      "proposalID": "5379",
+      "CriticalRisk": "Risk2:Doestheproject/technologyinvolveorrequireworkingwithsocialmedia?",
+      "AnswerProvided": "NoorNotApplicable(IfNA,pleaseelaborateinthe\"clarification\"column)",
+      "RiskScore": "0",
+      "InRiskRegister": "False",
+      "MitigationInPlace": "False",
+      "ConfidenceInMitigation": "",
+      "RiskType": "TechnicalSuccess",
+      "NewRiskScore": "0",
+      "Title": "",
+      "List": "RiskAssessmentQuestions_Project"
+    },
+    {
+      "proposal": "test52",
+      "proposalID": "5379",
+      "CriticalRisk": "Risk3:IfITproject,doesanITteamexist,(ITProjectManager,ProjectQualityManagement(PQM),SecurityManager,etc)?",
+      "AnswerProvided": "Yes,fullyappointedandexperiencedOrNotApplicable(IfNA,pleaseelaborateinthe\"clarification\"columne.g.NotanITproject)",
+      "RiskScore": "0",
+      "InRiskRegister": "False",
+      "MitigationInPlace": "False",
+      "ConfidenceInMitigation": "",
+      "RiskType": "TechnicalSuccess",
+      "NewRiskScore": "0",
+      "Title": "",
+      "List": "RiskAssessmentQuestions_Project"
+    },
+	],
+	"AllPortfolio": [
+    {
+      "SharedWith": ";Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Pareek Sunil;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Pareek Sunil;Kim Jason;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Pareek Sunil;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Jha Vivek;Jha Vivek;William, Harry;Jha Vivek;Jha Vivek;William, Harry;Holloway Russell;Yue, Yanyan;Arnold Michel;Zachs Gunther;Pareek Sunil;Kim Jason;Keller Matthias",
+      "Proposals": ";5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5389;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5389;5388;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5389;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5357;5357;5397;5357;5357;5397;5396;5357;5357;5397;5357;5357;5397;5396;5398;5393;5392;5391;5390;5389;5388;5387",
+      "IsActive": "True",
+      "List": "AllPortfolio"
+    },
+    {
+      "SharedWith": ";Kim Jason;Kim Jason;Keller Matthias;Kim Jason;Kim Jason;Keller Matthias;Holloway Russell",
+      "Proposals": ";5357",
+      "IsActive": "True",
+      "List": "AllPortfolio"
+    },
+    {
+      "SharedWith": null,
+      "Proposals": ";5371;5371;5374",
+      "IsActive": "True",
+      "List": "AllPortfolio"
+    },
+	],
+	"Linked Work Packages Resource Breakup": [],
+	 "Project Links": [
+    {
+      "Proposal": null,
+      "ProposalID": "2349",
+      "URL": "https://sticsoftio.sharepoint.com/sites/CollabToolDev/Lists/Project%20Links/AllItems.aspxx",
+      "TexttoDisplay": "Projectplan",
+      "isProjectPlan": "True",
+      "Title": "Projectplan",
+      "List": "Project Links"
+    },
+    {
+      "Proposal": null,
+      "ProposalID": "2261",
+      "URL": "https://sticsoftio.sharepoint.com/sites/collabtooldev/_layouts/15/workbench.aspx#/collab/onepager/2349",
+      "TexttoDisplay": "documents",
+      "isProjectPlan": "False",
+      "Title": "documents",
+      "List": "Project Links"
+    },
+    {
+      "Proposal": null,
+      "ProposalID": "2349",
+      "URL": "https://sticsoftio.sharepoint.com/sites/CollabToolDev/Lists/Project%20Links/AllItems.aspxxx",
+      "TexttoDisplay": "asdasd",
+      "isProjectPlan": "False",
+      "Title": "asdasd",
+      "List": "Project Links"
+    },
+	],
+	"Proposal Timelines": [
+    {
+      "Proposal": "test proposal",
+      "ProposalID": "5358",
+      "Phase": null,
+      "StartDate": "02-12-2021",
+      "DueDate": "19-12-2021",
+      "TaskType": "",
+      "Activity": "efficiency",
+      "Title": "efficiency",
+      "PhaseID": null,
+      "List": "Proposal Timelines"
+    },
+    {
+      "Proposal": "test",
+      "ProposalID": "5359",
+      "Phase": null,
+      "StartDate": "02-12-2021",
+      "DueDate": "27-12-2021",
+      "TaskType": "",
+      "Activity": "digitization",
+      "Title": "digitization",
+      "PhaseID": null,
+      "List": "Proposal Timelines"
+    },
+    {
+      "Proposal": "test32",
+      "ProposalID": "5361",
+      "Phase": null,
+      "StartDate": "02-12-2021",
+      "DueDate": "17-12-2021",
+      "TaskType": "",
+      "Activity": "others",
+      "Title": "others",
+      "PhaseID": null,
+      "List": "Proposal Timelines"
+    },
+	],
+	"Recognize": [
+    {
+      "Project": null,
+      "ProjectID": "2514",
+      "Users": "Keller Matthias",
+      "Description": "&lt;p&gt;okoko&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;okoko&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;oko&lt;/p&gt;",
+      "AverageRating": "",
+      "RatingCount": "",
+      "LikesCount": "1",
+      "Title": "Recognize",
+      "List": "Recognize"
+    },
+    {
+      "Project": null,
+      "ProjectID": "2514",
+      "Users": "Yue, Yanyan",
+      "Description": "&lt;p&gt;Aprojectisthelabourofloveofawholegamutofindividuals.Takeamomentto&amp;nbsp;&lt;strong&gt;recognizeacolleague&lt;/strong&gt;&amp;nbsp;whomadethisprojectalittlebitmorespecial!&lt;/p&gt;",
+      "AverageRating": "",
+      "RatingCount": "",
+      "LikesCount": "",
+      "Title": "Recognize",
+      "List": "Recognize"
+    },
+    {
+      "Project": null,
+      "ProjectID": "2514",
+      "Users": "Yue, Yanyan",
+      "Description": "&lt;p&gt;Whatisthe&amp;nbsp;&lt;strong&gt;plural&lt;/strong&gt;&amp;nbsp;of&amp;nbsp;&lt;strong&gt;recognition&lt;/strong&gt;?...Thenoun&amp;nbsp;&lt;strong&gt;recognition&lt;/strong&gt;&amp;nbsp;canbecountableoruncountable.Inmoregeneral,commonlyused,contexts,the&amp;nbsp;&lt;strong&gt;plural&lt;/strong&gt;&amp;nbsp;formwillalsobe&lt;/p&gt;",
+      "AverageRating": "",
+      "RatingCount": "",
+      "LikesCount": "",
+      "Title": "Recognize",
+      "List": "Recognize"
+    },
+	],
+	"Share Learnings": [
+    {
+      "Project": null,
+      "ProjectID": "2798",
+      "Learning": "",
+      "Description": "&lt;p&gt;5445jyghbhgvgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggghhhhhhhhhhhhhhhhhhhhhhhh&lt;/p&gt;",
+      "AverageRating": "",
+      "RatingCount": "",
+      "LikesCount": "1",
+      "List": "Share Learnings"
+    },
+    {
+      "Project": null,
+      "ProjectID": "2823",
+      "Learning": "",
+      "Description": "Shareyourteamachievements,processorbestpractices,governance,OPTICCollaborationtoolrelatedinsights-anythingthatcouldhelpotherslearnandenrichtheirexperienceby.",
+      "AverageRating": "",
+      "RatingCount": "",
+      "LikesCount": "2",
+      "List": "Share Learnings"
+    },
+    {
+      "Project": null,
+      "ProjectID": "2816",
+      "Learning": "",
+      "Description": "h",
+      "AverageRating": "",
+      "RatingCount": "",
+      "LikesCount": "1",
+      "List": "Share Learnings"
+    },
+	],
+	"Feedback": [
+    {
+      "Stage": null,
+      "Status": null,
+      "Approver": null,
+      "RepliedTo": null,
+      "Proposal": "5359",
+      "ProposalID": "5359",
+      "GivenBy": "Vinay Kumar",
+      "GivenTo": null,
+      "CommentRelatedField": "",
+      "CommentType": "",
+      "GivenByUserRole": "",
+      "Comments": "approved",
+      "Closed": "False",
+      "CommentId": "Comment_0000",
+      "CommentSection": "approvalcomments",
+      "ParentCommentId": "",
+      "ActionNeeded": "",
+      "Title": "c076fe23-73ae-4864-b5a2-2fc351f2581e",
+      "List": "Feedback"
+    },
+    {
+      "Stage": null,
+      "Status": null,
+      "Approver": null,
+      "RepliedTo": null,
+      "Proposal": "5359",
+      "ProposalID": "5359",
+      "GivenBy": "Vinay Kumar",
+      "GivenTo": null,
+      "CommentRelatedField": "",
+      "CommentType": "",
+      "GivenByUserRole": "",
+      "Comments": "approved",
+      "Closed": "False",
+      "CommentId": "Comment_0002581",
+      "CommentSection": "approvalcomments",
+      "ParentCommentId": "",
+      "ActionNeeded": "",
+      "Title": "f340c935-0758-4b46-90e3-039286b0a0f7",
+      "List": "Feedback"
+    },
+    {
+      "Stage": null,
+      "Status": null,
+      "Approver": null,
+      "RepliedTo": null,
+      "Proposal": "5362",
+      "ProposalID": "5362",
+      "GivenBy": "Vinay Kumar",
+      "GivenTo": null,
+      "CommentRelatedField": "",
+      "CommentType": "",
+      "GivenByUserRole": "",
+      "Comments": "approved",
+      "Closed": "False",
+      "CommentId": "Comment_0002582",
+      "CommentSection": "approvalcomments",
+      "ParentCommentId": "",
+      "ActionNeeded": "",
+      "Title": "b52aac57-0428-4c4a-b59d-2d1538fbe89f",
+      "List": "Feedback"
+    },
+	],
+	"Notification": [
+    {
+      "Proposal": "test",
+      "ProposalID": "5359",
+      "NotificationTo": null,
+      "NotificationType": "",
+      "Title": "",
+      "List": "Notification"
+    },
+    {
+      "Proposal": "test",
+      "ProposalID": "5359",
+      "NotificationTo": null,
+      "NotificationType": "",
+      "Title": "",
+      "List": "Notification"
+    },
+    {
+      "Proposal": "test",
+      "ProposalID": "5362",
+      "NotificationTo": null,
+      "NotificationType": "",
+      "Title": "",
+      "List": "Notification"
+    },
+	],
+	"Project Updates Tracker": [
+    {
+      "Project": null,
+      "ProjectID": "2865",
+      "LastUpdated": "24-05-2021",
+      "Updates": "19",
+      "Title": "Phases&Milestone",
+      "List": "Project Updates Tracker"
+    },
+    {
+      "Project": null,
+      "ProjectID": "1773",
+      "LastUpdated": "14-05-2021",
+      "Updates": "1",
+      "Title": "Resources",
+      "List": "Project Updates Tracker"
+    },
+    {
+      "Project": null,
+      "ProjectID": "2845",
+      "LastUpdated": "22-05-2021",
+      "Updates": "17",
+      "Title": "Resources",
+      "List": "Project Updates Tracker"
+    },
+	],
+	"Proposal Approval Cycle": [
+    {
+      "Proposal": "5358",
+      "ProposalID": "5358",
+      "Stage": "VMT Verification",
+      "StageID": "2",
+      "Status": "Approved",
+      "StatusID": "21",
+      "MeetingDepartment": null,
+      "Meeting": null,
+      "StartDate": "02-12-2021",
+      "EndDate": "02-12-2021",
+      "IsOffline": "True",
+      "IsOnline": "False",
+      "Governance": "",
+      "MeetingDateForGLF": "",
+      "Comments": "",
+      "MeetingDepartmentID": null,
+      "MeetingID": null,
+      "List": "Proposal Approval Cycle"
+    },
+    {
+      "Proposal": "5358",
+      "ProposalID": "5358",
+      "Stage": "FLT Approval",
+      "StageID": "8",
+      "Status": "In Progress",
+      "StatusID": "19",
+      "MeetingDepartment": null,
+      "Meeting": null,
+      "StartDate": "02-12-2021",
+      "EndDate": null,
+      "IsOffline": "True",
+      "IsOnline": "False",
+      "Governance": "",
+      "MeetingDateForGLF": "",
+      "Comments": "",
+      "MeetingDepartmentID": "0",
+      "MeetingID": "0",
+      "List": "Proposal Approval Cycle"
+    },
+    {
+      "Proposal": "5359",
+      "ProposalID": "5359",
+      "Stage": "VMT Verification",
+      "StageID": "2",
+      "Status": "Approved",
+      "StatusID": "21",
+      "MeetingDepartment": null,
+      "Meeting": null,
+      "StartDate": "02-12-2021",
+      "EndDate": "02-12-2021",
+      "IsOffline": "True",
+      "IsOnline": "False",
+      "Governance": "",
+      "MeetingDateForGLF": "",
+      "Comments": "",
+      "MeetingDepartmentID": null,
+      "MeetingID": null,
+      "List": "Proposal Approval Cycle"
+    },
+	],
+	 "User Traffic Logs": [
+    {
+      "Time": "20-09-2021",
+      "Name": "",
+      "Role": "",
+      "Section": "Collab",
+      "Timestamp": "2021-09-15",
+      "Year": "2021",
+      "Month": "9",
+      "Date": "21",
+      "Day": "2",
+      "Proposal": "",
+      "List": "User Traffic Logs"
+    },
+    {
+      "Time": "20-09-2021",
+      "Name": "",
+      "Role": "",
+      "Section": "Collab",
+      "Timestamp": "2021-09-16",
+      "Year": "2021",
+      "Month": "9",
+      "Date": "21",
+      "Day": "2",
+      "Proposal": "",
+      "List": "User Traffic Logs"
+    },
+    {
+      "Time": "20-09-2021",
+      "Name": "",
+      "Role": "",
+      "Section": "ProposalDecider",
+      "Timestamp": "2021-09-21",
+      "Year": "2021",
+      "Month": "9",
+      "Date": "21",
+      "Day": "2",
+      "Proposal": "",
+      "List": "User Traffic Logs"
+    },
+	],
+	"Approvers": [
+    {
+      "Proposal": "test",
+      "ProposalID": "5359",
+      "Status": "In Progress",
+      "StatusID": "19",
+      "Stage": "VMT Approval",
+      "StageID": "5",
+      "Approver": "Kim Jason",
+      "ApprovedDate": null,
+      "Comments": "",
+      "AssignerComments": "",
+      "List": "Approvers"
+    },
+    {
+      "Proposal": "test",
+      "ProposalID": "5359",
+      "Status": "In Progress",
+      "StatusID": "19",
+      "Stage": "VMT Approval",
+      "StageID": "5",
+      "Approver": "William, Harry",
+      "ApprovedDate": null,
+      "Comments": "",
+      "AssignerComments": "",
+      "List": "Approvers"
+    },
+    {
+      "Proposal": "test",
+      "ProposalID": "5359",
+      "Status": "In Progress",
+      "StatusID": "19",
+      "Stage": "VMT Approval",
+      "StageID": "5",
+      "Approver": "Keller Matthias",
+      "ApprovedDate": null,
+      "Comments": "",
+      "AssignerComments": "",
+      "List": "Approvers"
+    },
+	],
+	"WatchList": [
+    {
+      "Proposals": "Test 99",
+      "ProposalsID": "5376",
+      "User": "Keller Matthias",
+      "List": "WatchList"
+    }
+  ],
+  "Digital Budget": [
+    {
+      "Department": "GDDIC",
+      "DepartmentID": "3",
+      "MeetingDate": "2020-09-28T10:30:00Z",
+      "MeetingDateID": "19",
+      "BudgetGap": "$11.6mprob./$1.8munprob.remaining",
+      "BudgetTitle": "LF1$95.5m",
+      "Title": "LF1$95.5m",
+      "List": "Digital Budget"
+    },
+    {
+      "Department": "VMT",
+      "DepartmentID": "2",
+      "MeetingDate": "2020-09-25T10:30:00Z",
+      "MeetingDateID": "18",
+      "BudgetGap": "75",
+      "BudgetTitle": "Budgettbd",
+      "Title": "Budget",
+      "List": "Digital Budget"
+    },
+    {
+      "Department": "GDDIC",
+      "DepartmentID": "3",
+      "MeetingDate": "2020-09-28T10:30:00Z",
+      "MeetingDateID": "19",
+      "BudgetGap": "thisistestbudget",
+      "BudgetTitle": "3rdbudget",
+      "Title": "3rdbudget",
+      "List": "Digital Budget"
+    },
+	],
+	"PortfolioComments": [
+    {
+      "Portfolio": "75",
+      "PortfolioID": "75",
+      "Comments": "test",
+      "List": "PortfolioComments"
+    },
+    {
+      "Portfolio": "75",
+      "PortfolioID": "75",
+      "Comments": "LoremIpsumissimplydummytextoftheprintingandtypesettingindustry.LoremIpsumhasbeentheindustry'sstandarddummytexteversincethe1500s,whenanunknownprintertookagalleyoftypeandscrambledittomakeatypespecimenbook.Ithassurvivednotonlyfivecenturies,butalsotheleapintoelectronictypesetting,remainingessentiallyunchanged.",
+      "List": "PortfolioComments"
+    },
+    {
+      "Portfolio": "75",
+      "PortfolioID": "75",
+      "Comments": "test",
+      "List": "PortfolioComments"
+    },
+	],
+	"Project Timelines": [
+    {
+      "Proposal": "efficiency",
+      "ProposalID": "5375",
+      "Phase": null,
+      "StartDate": "02-12-2021",
+      "DueDate": "06-01-2022",
+      "CompletedOn": null,
+      "TaskType": "",
+      "Activity": "qa",
+      "Completed": "False",
+      "ProposalStartDate": "2021-12-02T11:12:11Z",
+      "ProposalDueDate": "2022-01-06T18:30:00Z",
+      "PhaseID": null,
+      "List": "Project Timelines"
+    },
+    {
+      "Proposal": "efficiency",
+      "ProposalID": "5375",
+      "Phase": "qa",
+      "StartDate": "13-12-2021",
+      "DueDate": "13-12-2021",
+      "CompletedOn": null,
+      "TaskType": "",
+      "Activity": "qasub1",
+      "Completed": "False",
+      "ProposalStartDate": "2021-12-13T18:30:00Z",
+      "ProposalDueDate": "2021-12-13T18:30:00Z",
+      "PhaseID": "1644",
+      "List": "Project Timelines"
+    },
+    {
+      "Proposal": "test36",
+      "ProposalID": "5374",
+      "Phase": null,
+      "StartDate": "02-12-2021",
+      "DueDate": "29-12-2021",
+      "CompletedOn": null,
+      "TaskType": "",
+      "Activity": "others",
+      "Completed": "False",
+      "ProposalStartDate": "2021-12-02T09:05:42Z",
+      "ProposalDueDate": "2021-12-29T18:30:00Z",
+      "PhaseID": null,
+      "List": "Project Timelines"
+    },
+	]
+	}
+	

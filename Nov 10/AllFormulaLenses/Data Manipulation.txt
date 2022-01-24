@@ -1,0 +1,33 @@
+//Concatenate field
+PARENT:
+LOAD DISTINCT
+"Project ID" as Project_ID,
+"Project ID Replicated at WP level" & ' ' & "Project Name" as "Parent Name",
+"Dominant Value Driver" as "Parent DVL",
+"Investment Status" as "Parent Investment Status",
+"Project Stage" as "Parent Project Stage"
+Resident Current_Week
+Where Parent_Child = 'Parent';
+
+left join(Current_Week)
+LOAD DISTINCT
+Project_ID as "Project ID Replicated at WP level",
+"Parent Name" as Parent_Name,
+"Parent DVL" as Parent_DVL,
+"Parent Investment Status" as Parent_Investment_Status,
+"Parent Project Stage" as Parent_Project_Stage
+Resident PARENT;
+
+//Differentiate ExtravalProject ID
+left join(Current_Week)
+
+LOAD DISTINCT
+	"Project ID Replicated at WP level",
+    'Yes' as Is_Extraval_ID
+Resident Current_Week
+where Frontier_Key = 'Frontier';
+
+Store Current_Week into [lib://Folder for QS_PRD_NBS_DATA_TA_Data_Analytics/Survesh/temp3.csv] (txt);
+
+
+

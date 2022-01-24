@@ -1,0 +1,216 @@
+Financial_table_level_1:
+//Non Frontier
+LOAD DISTINCT
+	[Unique ID],
+    
+    // Full-Year Unprobabilized
+	([2021 (f)]) as [Full-Year Unprobabilized_Internal Resources],
+    ([2021 (f)]*(227000/1000000)) as [Full-Year Unprobabilized_Internal Cost],
+  	(([ACT YTD spent]) + ([2021 YTG]))/1000000 as [Full-Year Unprobabilized_External Expense],
+  //  if(Frontier_Key = 'Frontier', ([External costs - 2021]) ,([2021]/1000000)) as [Full-Year Unprobabilized_External Expense],
+    Cap2021 as [Full-Year Unprobabilized_CapEx], 
+    
+    // Year +1
+    ([2022 (f)]) as [Year+1_Internal Resources],
+    ([2022 (f)]*(227000/1000000)) as [Year+1_Internal Cost],
+    ([2022]/1000000) as [Year+1_External Expense],
+    0 as [Year+1_CapEx],
+    //if(Frontier_Key = 'Frontier',  Cap2021 + "Capex / other - 2021" ,Cap2021) as [Year+1_CapEx], //Rename [Total Capex / other] to Capex / other - 2021
+    
+    // Year +2
+    ([2023 (f)]) as [Year+2_Internal Resources],
+    ([2023 (f)]*(227000/1000000)) as [Year+2_Internal Cost],
+    ([2023]/1000000) as [Year+2_External Expense],
+    0 as [Year+2_CapEx], 
+    
+    // Year >+2
+    [2024 (f)] + [2025 (f)]+ [2026 (f)] + [2027 (f)] + [2028 (f)] + ([2029 (f)]) + ([2030 (f)]) + ([2031 (f)]) + ([2032 (f)]) + ([2033 (f)]) + ([2034 (f)]) + ([2035 (f)]) as [Year>+2_Internal Resources],
+    ([2024 (f)] + [2025 (f)]+ [2026 (f)] + [2027 (f)] + [2028 (f)] + ([2029 (f)]) + ([2030 (f)]) + ([2031 (f)]) + ([2032 (f)]) + ([2033 (f)]) + ([2034 (f)]) + ([2035 (f)]))*(227000/1000000) as [Year>+2_Internal Cost],
+    (( [2024] + [2025] + [2026] + [2027] + [2028] + ([2029]) + ([2030]) + ([2031]) + ([2032]) + ([2033]) + ([2034]) + ([2035]))/1000000) as [Year>+2_External Expense],
+    0 as [Year>+2_CapEx] //Rename [Total Capex / other] to Capex / other - 2022
+
+RESIDENT 
+	Current_Week
+where 
+	Frontier_Key <> 'Frontier';
+//Store Financial_table_level_1 into [lib://Folder for QS_PRD_NBS_DATA_TA_Data_Analytics/Survesh/temp4.csv] (txt);
+concatenate(Financial_table_level_1)
+// Frontier
+LOAD DISTINCT
+	[Unique ID],
+    
+    // Full-Year Unprobabilized
+	[Internal costs - 2021]/0.227 as [Full-Year Unprobabilized_Internal Resources],
+    [Internal costs - 2021] as [Full-Year Unprobabilized_Internal Cost],
+  	(([ACT YTD spent]) + ([2021 YTG]))/1000000 as [Full-Year Unprobabilized_External Expense],
+    //  if(Frontier_Key = 'Frontier', ([External costs - 2021]) ,([2021]/1000000)) as [Full-Year Unprobabilized_External Expense],
+    "Capex / other - 2021" as [Full-Year Unprobabilized_CapEx], 
+    
+    // Year +1
+    [Internal costs - 2022]/0.227 as [Year+1_Internal Resources],
+    [Internal costs - 2022] as [Year+1_Internal Cost],
+    ([External costs - 2022]) as [Year+1_External Expense],
+    "Capex / other - 2022" as [Year+1_CapEx],
+    //if(Frontier_Key = 'Frontier',  Cap2021 + "Capex / other - 2021" ,Cap2021) as [Year+1_CapEx], //Rename [Total Capex / other] to Capex / other - 2021
+    
+    // Year +2
+    [Internal costs - 2023]/0.227 as [Year+2_Internal Resources],
+    [Internal costs - 2023] as [Year+2_Internal Cost],
+    ([External costs - 2023]) as [Year+2_External Expense],
+    "Capex / other - 2023" as [Year+2_CapEx], 
+    
+    // Year >+2
+    ([Internal costs - 2024]+[Internal costs - 2025]+[Internal costs - 2026]+[Internal costs - 2027]+[Internal costs - 2028])/0.227 as [Year>+2_Internal Resources],
+    ([Internal costs - 2024]+[Internal costs - 2025]+[Internal costs - 2026]+[Internal costs - 2027]+[Internal costs - 2028]) as [Year>+2_Internal Cost],
+    ([External costs - 2024]+[External costs - 2025]+[External costs - 2026]+[External costs - 2027]+[External costs - 2028]) as [Year>+2_External Expense],
+    [Capex / other - 2024] + [Capex / other - 2025] + [Capex / other - 2026] + [Capex / other - 2027] + [Capex / other - 2028] as [Year>+2_CapEx] //Rename [Total Capex / other] to Capex / other - 2022
+
+RESIDENT 
+	Current_Week
+where 
+	Frontier_Key = 'Frontier';
+
+// REPLACING NULL VALUES WITH 0's AS ALL THE ABOVE COLUMNS ARE MEASURES
+left join(Current_Week)
+
+LOAD DISTINCT
+	[Unique ID],
+	if(isnull([Full-Year Unprobabilized_Internal Resources]),0,[Full-Year Unprobabilized_Internal Resources]) as full_year_unprobabilized_internal_resources,
+    if(isnull([Year+1_Internal Resources]),0,[Year+1_Internal Resources]) as [year+1_internal_resources],
+    if(isnull([Year+2_Internal Resources]),0,[Year+2_Internal Resources]) as [year+2_internal_resources],
+    if(isnull([Year>+2_Internal Resources]),0,[Year>+2_Internal Resources]) as [year>+2_internal_resources],
+    if(isnull([Full-Year Unprobabilized_Internal Cost]),0,[Full-Year Unprobabilized_Internal Cost]) as full_year_unprobabilized_internal_cost,
+    if(isnull([Year+1_Internal Cost]),0,[Year+1_Internal Cost]) as [year+1_internal_cost],
+    if(isnull([Year+2_Internal Cost]),0,[Year+2_Internal Cost]) as [year+2_internal_cost],
+    if(isnull([Year>+2_Internal Cost]),0,[Year>+2_Internal Cost]) as [year>+2_internal_cost],
+    if(isnull([Full-Year Unprobabilized_External Expense]),0,[Full-Year Unprobabilized_External Expense]) as full_year_unprobabilized_external_expense,
+    if(isnull([Year+1_External Expense]),0,[Year+1_External Expense]) as [year+1_external_expense],
+    if(isnull([Year+2_External Expense]),0,[Year+2_External Expense]) as [year+2_external_expense],
+    if(isnull([Year>+2_External Expense]),0,[Year>+2_External Expense]) as [year>+2_external_expense],
+    if(isnull([Full-Year Unprobabilized_CapEx]),0,[Full-Year Unprobabilized_CapEx]) as full_year_unprobabilized_capex,
+    if(isnull([Year+1_CapEx]),0,[Year+1_CapEx]) as [year+1_capex],
+    if(isnull([Year+2_CapEx]),0,[Year+2_CapEx]) as [year+2_capex],
+    if(isnull([Year>+2_CapEx]),0,[Year>+2_CapEx]) as [year>+2_capex]
+RESIDENT 
+	Financial_table_level_1;
+
+
+Financial_table_level_2:
+//Strategy Approved
+LOAD DISTINCT
+	[Unique ID],
+	//Internal Resources
+		//Lifetime-To-Go
+    full_year_unprobabilized_internal_resources + [year+1_internal_resources] + [year+2_internal_resources] + [year>+2_internal_resources] as [lifetime cost to go internal resources],
+    
+	//Internal Cost
+		//Lifetime-To-Go
+    full_year_unprobabilized_internal_cost + [year+1_internal_cost] + [year+2_internal_cost] + [year>+2_internal_cost] as [lifetime cost to go internal cost],
+    
+	//External Expense (OpEx)
+		//Lifetime-To-Go
+    full_year_unprobabilized_external_expense + [year+1_external_expense] + [year+2_external_expense] + [year>+2_external_expense] as [lifetime cost to go external expense],
+    	//Full-Year Probabilized
+    (full_year_unprobabilized_external_expense * 0.70) as [full year probabilized external expense],
+    
+	//CapEx
+		//Lifetime-To-Go
+    full_year_unprobabilized_capex + [year+1_capex] + [year+2_capex] + [year>+2_capex] as [lifetime cost to go capex],
+    	//Full-Year Probabilized
+    full_year_unprobabilized_capex * 0.70 as [full year probabilized capex]
+RESIDENT 
+	Current_Week
+Where	
+	[Investment Approval] = 'Strategy Approved';
+
+Concatenate(Financial_table_level_2)
+//Proposed Plan
+LOAD DISTINCT
+	[Unique ID],
+	//Internal Resources
+		//Lifetime-To-Go
+    full_year_unprobabilized_internal_resources + [year+1_internal_resources] + [year+2_internal_resources] + [year>+2_internal_resources] as [lifetime cost to go internal resources],
+    
+	//Internal Cost
+		//Lifetime-To-Go
+    full_year_unprobabilized_internal_cost + [year+1_internal_cost] + [year+2_internal_cost] + [year>+2_internal_cost] as [lifetime cost to go internal cost],
+    
+	//External Expense (OpEx)
+		//Lifetime-To-Go
+    full_year_unprobabilized_external_expense + [year+1_external_expense] + [year+2_external_expense] + [year>+2_external_expense] as [lifetime cost to go external expense],
+    	//Full-Year Probabilized
+    (full_year_unprobabilized_external_expense * 0.40) as [full year probabilized external expense],
+    
+	//CapEx
+		//Lifetime-To-Go
+    full_year_unprobabilized_capex + [year+1_capex] + [year+2_capex] + [year>+2_capex] as [lifetime cost to go capex],
+    	//Full-Year Probabilized
+    full_year_unprobabilized_capex * 0.40 as [full year probabilized capex]
+RESIDENT 
+	Current_Week
+Where	
+	[Investment Approval] <> 'Strategy Approved';
+
+
+// REPLACING NULL VALUES WITH 0's AS ALL THE ABOVE COLUMNS ARE MEASURES
+Inner Join(Current_Week)
+LOAD DISTINCT
+	[Unique ID],
+	if(isnull([lifetime cost to go internal resources]),0,[lifetime cost to go internal resources]) as lifetime_cost_to_go_internal_resources,
+    if(isnull([lifetime cost to go internal cost]),0,[lifetime cost to go internal cost]) as lifetime_cost_to_go_internal_cost,
+    if(isnull([lifetime cost to go external expense]),0,[lifetime cost to go external expense]) as lifetime_cost_to_go_external_expense,
+    if(isnull([full year probabilized external expense]),0,[full year probabilized external expense]) as full_year_probabilized_external_expense,
+    if(isnull([lifetime cost to go capex]),0,[lifetime cost to go capex]) as lifetime_cost_to_go_capex,
+    if(isnull([full year probabilized capex]),0,[full year probabilized capex]) as full_year_probabilized_capex,
+    if(isnull([lifetime cost to go internal cost]),0,[lifetime cost to go internal cost]) + if(isnull([lifetime cost to go external expense]),0,[lifetime cost to go external expense]) + if(isnull([lifetime cost to go capex]),0,[lifetime cost to go capex]) as [lifetime cost to go]
+RESIDENT 
+	Financial_table_level_2;
+
+Lifetime_cost_to_go_level_1:
+LOAD DISTINCT
+  "Project ID Replicated at WP level" as lc_pid_level1,
+  [Unique ID] as lc_ui,
+  Parent_Child as lc_pc_level1,
+  if(Parent_Child = 'Parent',0,[lifetime cost to go]) as lc_level1
+RESIDENT 
+	Current_Week;
+    
+left join(Lifetime_cost_to_go_level_1)
+LOAD DISTINCT
+	lc_pid_level1
+	, sum(lc_level1) as lc_level2
+RESIDENT
+	Lifetime_cost_to_go_level_1
+GROUP By lc_pid_level1;
+    
+Lifetime_cost_to_go_level_2:
+LOAD DISTINCT
+	lc_ui
+    //Below column is supposed to be named as life time cost to go but this requires lot of changes in the UI to change all the places where 
+    //Life time cost at complete is used. Hence saving Life time cost to go as life time cost at complete as workaround
+    , lc_level2 * 1000000 as [Life-time cost at complete] 
+RESIDENT Lifetime_cost_to_go_level_1
+WHERE lc_pc_level1 = 'Parent';
+
+concatenate(Lifetime_cost_to_go_level_2)
+
+LOAD DISTINCT
+	lc_ui
+    //Below column is supposed to be named as life time cost to go but this requires lot of changes in the UI to change all the places where 
+    //Life time cost at complete is used. Hence saving Life time cost to go as life time cost at complete as workaround
+    , lc_level1 * 1000000 as [Life-time cost at complete]
+RESIDENT Lifetime_cost_to_go_level_1
+WHERE lc_pc_level1 = 'Child';	
+
+left Join(Current_Week)
+LOAD DISTINCT
+	lc_ui as [Unique ID]
+    //Below column is supposed to be named as life time cost to go but this requires lot of changes in the UI to change all the places where 
+    //Life time cost at complete is used. Hence saving Life time cost to go as life time cost at complete as workaround
+    , [Life-time cost at complete] ,
+   [Life-time cost at complete] as [Life-time cost at complete original]
+RESIDENT Lifetime_cost_to_go_level_2;
+
+
+Store Current_Week into [lib://Folder for QS_PRD_NBS_DATA_TA_Data_Analytics/Survesh/temp4.csv] (txt);
+
